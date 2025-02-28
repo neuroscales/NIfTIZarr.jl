@@ -4,7 +4,7 @@ import NIfTI
 using JSON
 using JSONSchema
 
-schema = Schema(JSON.parsefile(joinpath(dirname(@__FILE__), "data/nifti-zarr-schema-0.3.json")));
+schema = Schema(JSON.parsefile(joinpath(dirname(@__FILE__), "nifti-zarr-schema-1.0.rc1.json")));
 
 function test_json_validation(input_file::String)
     original_file = input_file
